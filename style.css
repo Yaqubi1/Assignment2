@@ -1,0 +1,37 @@
+body {
+	background: url(12_col.gif) center top repeat-y;
+	background-size: 90%;
+}
+
+section {
+	border: 1px solid #333;
+}
+
+.section1 {
+	grid-area: section1;
+}
+
+.section2 {
+	grid-area: section2;
+}
+
+.section3 {
+	grid-area: section3;
+}
+
+.section4 {
+	grid-area: section4;
+}
+
+.container {
+	width: 90%;
+	margin: 20px auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: minmax(200px, 1fr);
+
+	grid-template-areas:
+		"section1 section2 section3 section4";
+
+	grid-gap: 2% 2%;
+}
