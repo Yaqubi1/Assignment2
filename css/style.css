@@ -49,6 +49,8 @@ section {
 
 #footer-container {
 	padding: 10px;
+	min-height: 100%;
+	margin-bottom: 20px;
 	width: calc(100% - 20px);
 	grid-area: footer-container;
 	display: grid;
@@ -62,7 +64,7 @@ section {
 
 #container {
 	height: 90vh;
-	width: 90%;
+	width: 88%;
 	margin: 2vh auto;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -98,7 +100,7 @@ section {
 		"footer-container footer-container footer-container footer-container footer-container footer-container footer-container footer-container footer-container footer-container footer-container footer-container";
 	}
 	#footer-container {
-		grid-template-rows: 50% 50%;
+		grid-template-rows: 49% 49%;
 		grid-template-areas:
 		"footerbox1 footerbox1 footerbox2 footerbox2"
 		"footerbox3 footerbox3 footerbox4 footerbox4";
